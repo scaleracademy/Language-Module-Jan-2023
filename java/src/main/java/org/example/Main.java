@@ -3,12 +3,16 @@ package org.example;
 public class Main {
     static class Fruit {
         private String taste = "sweet";
-        public String getTaste() {
+        protected String getTaste() {
             return taste;
         }
     }
 
     static class Mango extends Fruit {
+        private String color = "yellow";
+        public String getTasteAndColor() {
+            return getTaste() + " " + color;
+        }
     }
 
     public static void main(String[] args) {
@@ -17,6 +21,6 @@ public class Main {
 //        Fruit f = new Mango();
 //        Mango m = new Fruit();
         Mango m = new Mango();
-        System.out.println(m.getTaste());
+        System.out.println(m.getTasteAndColor());
     }
 }
