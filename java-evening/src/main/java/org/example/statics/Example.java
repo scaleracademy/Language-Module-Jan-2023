@@ -30,5 +30,8 @@ public class Example {
                 .seats(5)
                 .build();
 
+        Vehicle.count = 10;
+        // redXUV300.count = 20;
+
     }
 }

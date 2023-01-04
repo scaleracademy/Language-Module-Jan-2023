@@ -1,6 +1,7 @@
 package org.example.statics;
 
 public class Vehicle {
+    static int count = 0;
     String brand;
     String model;
     int seats;
