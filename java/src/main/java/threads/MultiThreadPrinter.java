@@ -37,6 +37,8 @@ public class MultiThreadPrinter {
         Thread t2 = new Thread(numberPrinter);
         Thread t3 = new Thread(numberPrinter);
 
+        Thread t4 = new Thread(() -> System.out.println("Hello"));
+
         t1.start();
         t2.start();
         t3.start();
