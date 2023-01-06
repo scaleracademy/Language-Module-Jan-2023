@@ -1,6 +1,7 @@
 package org.example.generics;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,7 +23,6 @@ public class Generics {
 
         ((LinkedList<Integer>)intList2).peek();
         intList3.peek();
-
 
     }
 }

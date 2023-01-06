@@ -36,5 +36,21 @@ public class Streams {
                 });
 
         System.out.println("Max: " + max[0]);
+
+
+        ArrayList<ArrayList<Integer>> listOfLists = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            ArrayList<Integer> list = new ArrayList<>();
+            for (int j = 0; j < 10; j++) {
+                list.add(j);
+            }
+            listOfLists.add(list);
+        }
+        System.out.println(listOfLists);
+
+        var flatList = listOfLists.stream()
+                .flatMap(list -> list.stream())
+                .collect(Collectors.toCollection(ArrayList::new));
+        System.out.println(flatList);
     }
 }
